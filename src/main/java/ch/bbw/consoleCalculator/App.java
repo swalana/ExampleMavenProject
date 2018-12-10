@@ -12,8 +12,7 @@ public class App
     {
         System.out.println( "Calculator\n------------------" );
         Calculator calculator = new Calculator();
-         
-        
+           
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("erste Zahl: ");
 //        double nr1 = scanner.nextDouble();
@@ -23,6 +22,6 @@ public class App
         double nr1 = 1;
         double nr2 = 5.3;
         double result = calculator.calculateSum(nr1, nr2);
-        System.out.println(result);
+        System.out.println(nr1 + " + " + nr2 + " = " + result);
     }
 }
