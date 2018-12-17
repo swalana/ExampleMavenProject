@@ -26,5 +26,14 @@ public class CalculatorTest {
 	public void testSubstractionTwoPositiveIsOk() {
 		assertTrue(calc.calculateSubstraction(6.5, 5) == 1.5);
 	}
+	@Test (expected=ArithmeticException.class)
+	public void testDivisionNullErrorExpected() {
+		calc.calculateSubstraction(3, 0);
+	}
+	
+	@Test 
+	public void testDivisionNullErrorUnExpected() throws ArithmeticException {
+		calc.calculateSubstraction(3, 0);
+	}
 	
 }
