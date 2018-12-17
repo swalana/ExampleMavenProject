@@ -20,9 +20,11 @@ public class CalculatorTest {
 		calc = new Calculator();
 		assertTrue(calc.calculateSum(3.5, 5) == 8.5);
 	}
+	
 	@Test
 	public void testSubstractionTwoPositiveIsOk() {
 		calc = new Calculator();
-		assertTrue(calc.calculateSubstraction(6.5, 5) == 0.5);
+		assertTrue(calc.calculateSubstraction(6.5, 5) == 1.5);
 	}
+	
 }
