@@ -28,7 +28,7 @@ public class CalculatorTest {
 	}
 	@Test (expected=ArithmeticException.class)
 	public void testDivisionNullErrorExpected() {
-		calc.calculateSubstraction(3, 0);
+		calc.calculateDivision(3, 0);
 	}
 	
 //	@Test 
