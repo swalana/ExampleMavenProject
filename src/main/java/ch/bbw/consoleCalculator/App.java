@@ -21,7 +21,12 @@ public class App
         
         double nr1 = 1;
         double nr2 = 5.3;
-        double result = calculator.calculateSum(nr1, nr2);
-        System.out.println(nr1 + " + " + nr2 + " = " + result);
+        double result1 = calculator.calculateSum(nr1, nr2);
+        System.out.println(nr1 + " + " + nr2 + " = " + result1);
+        double nr3 = 6;
+        double nr4 = 3.1;
+        double result2 = calculator.calculateSubstraction(nr3, nr4);
+        System.out.println(nr3 + " - " + nr4 + " = " + result2);
+    
     }
 }

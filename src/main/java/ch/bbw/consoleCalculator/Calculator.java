@@ -10,7 +10,7 @@ public class Calculator {
 		return number1 - number2;
 	}
 	
-	public int calculateSubstraction(int number1, int number2) {
+	public int calculateDivision(int number1, int number2) {
 		return number1 / number2;
 	}
 }
