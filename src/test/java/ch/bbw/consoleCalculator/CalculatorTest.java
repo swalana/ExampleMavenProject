@@ -31,9 +31,9 @@ public class CalculatorTest {
 		calc.calculateSubstraction(3, 0);
 	}
 	
-	@Test 
-	public void testDivisionNullErrorUnExpected() throws ArithmeticException {
-		calc.calculateSubstraction(3, 0);
-	}
+//	@Test 
+//	public void testDivisionNullErrorUnExpected() throws ArithmeticException {
+//		calc.calculateSubstraction(3, 0);
+//	}
 	
 }
