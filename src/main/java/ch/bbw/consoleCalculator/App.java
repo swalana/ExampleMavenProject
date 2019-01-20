@@ -1,7 +1,5 @@
 package ch.bbw.consoleCalculator;
 
-import java.util.Scanner;
-
 /**
  * Hello world!
  *
@@ -25,7 +23,7 @@ public class App
         System.out.println(nr1 + " + " + nr2 + " = " + result1);
         double nr3 = 6;
         double nr4 = 3.1;
-        double result2 = calculator.calculateSubstraction(nr3, nr4);
+        double result2 = calculator.calculateSubtraction(nr3, nr4);
         System.out.println(nr3 + " - " + nr4 + " = " + result2);
         System.out.println(Integer.MAX_VALUE);
         System.out.println(Integer.MIN_VALUE);
