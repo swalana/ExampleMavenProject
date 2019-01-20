@@ -1,15 +1,15 @@
 language: java
 sudo: false
 script: mvn install
-
 before_deploy:
-      # Set up git user name and tag this commit
-      - git config --local user.name "swalana"
-      - git config --local user.email "sara.ott@lernende.bbw.ch"
-      - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-      - git tag $TRAVIS_TAG
-    deploy:
-      provider: releases
-      api_key: "GITHUB OAUTH TOKEN"
-      file: "FILE TO UPLOAD"
-      skip_cleanup: true
+- git config --local user.name "swalana"
+- git config --local user.email "swalana@random.ch"
+- export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+- git tag $TRAVIS_TAG
+deploy:
+  provider: releases
+  api_key:
+    secure: gjNcINmXJCVLAwpi93YQ3G0lAmMYEX+yk0h4xBdWk0D+O0j3tvyZhkGH6meT2NRsxkoT2W+THwUh++8isnizwKt3lOhlE6pYeKCo/1V23vm29inCoIfJs1LhHvViYEMCCPsdF68Lu4ZEFjV4LyyowFGc6StoK5JUko06YjuKI4m75LHonKk1wyBJQkfUHELwmIEcNTrbj0D0vrK33rGFR+qV6ZOs1EqEBc8Emw+YXOvhYJ/BI5LciYy1g8uu1iJfmvJWYXaDEQIgKFgqhUaZKsqLWnANM1I7FHJWYIYL5wKe4Wnk5HxVQ98RSvfBALVPI8jbprVDoQiPU6kmdtYeY5Wbe9n0pUmKOoW5XJtwTAUaqCAFDbsTLQtKFnfnsRgYoRelC2bhAB7QpMRDX45KxjAXmhVep3kad+fRoIDv+l/O0LNMgKZe3SQztVsaE2hOiI5Bv8VJ9nhSVyd7mCJ/B7DpwmpSib2Xbr9yabKyetukiyK0kB+u7/kNc8+6YYFoUqAOhBE0y4wYGbqSyHMS+wWLevoylnZj4OLy3gHWEnqTac6y1tJK6DXNYbvS100CpFKcs6+4QAwBSH8trfo0fCDiJQB+9WupP27GoxmsEaAQ2kZ6j8CnKuQy7/7mqyWjQN4atZxsLHtw8kZcRARw29fctOsizaBWitR3ngjeaP8=
+  file: "/home/travis/.m2/repository/ch/bbw/02_ConsoleCalculatorWithMaven/0.0.1-SNAPSHOT/02_ConsoleCalculatorWithMaven-0.0.1-SNAPSHOT.jar"
+  on:
+    repo: swalana/ExampleMavenProject
