@@ -27,6 +27,10 @@ public class App
         double nr4 = 3.1;
         double result2 = calculator.calculateSubstraction(nr3, nr4);
         System.out.println(nr3 + " - " + nr4 + " = " + result2);
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE + Integer.MIN_VALUE);
+        
     
     }
 }

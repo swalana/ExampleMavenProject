@@ -33,7 +33,7 @@ public class CalculatorTest {
 	
 //	@Test 
 //	public void testDivisionNullErrorUnExpected() throws ArithmeticException {
-//		calc.calculateSubstraction(3, 0);
+//		calc.calculateDivision(3, 0);
 //	}
 	
 }
